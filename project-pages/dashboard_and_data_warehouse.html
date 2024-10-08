@@ -1,29 +1,20 @@
 
-
-<!-- 
-  IMPORTANT! 
-  
-  Keep this file unchanged to use as a template for all future project pages. 
-
-  For every new project you add to your portfolio, make a copy of this file in the
-  'project-pages' folder with a name related to the project.
--->
-
-
 <!DOCTYPE html>
 <html lang="en">
 	<head>
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-WNDTCQRJG3"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-WNDTCQRJG3');
+    </script>
+
 		<meta charset="utf-8">
-    <!-- 
-      TODO
 
-      Upload your Unemployable (or whatever photo you like) to the assets/images folder
-      and change the name of the image below to match the uploaded one
-
-      Change the title in the <title> tag to whatever you would like the title of your portfolio to be
-
-      This should be the same across all pages.
-     -->
      <link rel="icon" href="../assets/images/1311.png" />
      <title>Chris Olson's Portfolio</title>
     <meta name="description" content="A portfolio template for the Unemployables community.">
@@ -39,17 +30,9 @@
     <!-- NAVBAR -->
     <div class="navbar">
       <a class="nav-title-link" href="../index.html">
-        <!-- 
-          TODO - Change the "Portfolio Title" to whatever you want displayed in the top left
 
-          (this should be the same across all pages)
-         -->
         <span class="nav-title">My Portfolio</span>
-        <!-- 
-          TODO - Change the email after 'mailto:' to your email address for contact 
-        
-          (this should be the same across all pages)
-        -->
+
         <a class="button" href="mailto:ochistopher380@gmail.com">
           <span class="button-text">Contact Me</span>
         </a>
@@ -61,25 +44,14 @@
 
       <!-- PROJECT HEADER -->
       <div id="project-header">
-          <!-- 
-            TODO
-
-            - Change the 'main-title' text to the name of your project
-            - Change the 'body-text' text to a short and sweet description of your project (maybe the same as the one on the project card)
-            - Change "desktop.jpeg" to the image filename you uploaded in the assets/images folder.
-          -->
+ 
         <div class="main-title">Sales Dashboard and Data Warehouse</div>
         <div class="body-text">A dashboard for a hypothetical retail chain with data stored in a Kimbal Data Warehouse implemented in Snowflake</div>
         <div class='tableauPlaceholder' id='viz1727469656970' style='position: relative'><noscript><a href='#'><img alt='Story 1 ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;IM&#47;IMT577Visualizations&#47;Story1&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='IMT577Visualizations&#47;Story1' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;IM&#47;IMT577Visualizations&#47;Story1&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='language' value='en-US' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1727469656970');                    var vizElement = divElement.getElementsByTagName('object')[0];                    vizElement.style.width='1016px';vizElement.style.height='991px';                    var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
       </div>
 
       <!-- PROJECT DETAILS -->
-      <!-- 
-        TODO
 
-        - Change the 'subheader-text' to whatever header you want for project details
-        - Add paragraphs using the <div class="body-text"></div> elements in the "project-details-content"
-      -->
       <div id="project-details">
         <div class="subheader-text">Project Details</div>
         <div class="project-details-content">
@@ -89,32 +61,10 @@
 
       <!-- IMAGE GALLERY -->
       <div id="project-gallery">
-        <!-- TODO - Change the 'subheader-text' to whatever you want the Gallery section header to say -->
+
         <div class="subheader-text"></div>
         <div class="project-gallery-content">
-            <!-- 
-              TODO
 
-              This is where the images in the gallery live. Here's a simple gallery image for you to copy:
-
-              Full Width Image:
-
-                <div class="gallery-image-container">
-                  <img src="../assets/images/IMAGE_NAME" class="gallery-image">
-                  <span class="image-caption">IMAGE_CAPTION</span>
-                </div>
-
-              Half Width Image: 
-
-                <div class="gallery-image-container half-width">
-                  <img src="../assets/images/IMAGE_NAME" class="gallery-image">
-                  <span class="image-caption">IMAGE_CAPTION</span>
-                </div>
-
-              - To add an image to the this area, copy one of the above, paste it below this comment, and change the following:
-                  - IMAGE_NAME: the name of the image file in assets/images
-                  - IMAGE_CAPTION: to the caption of the image
-            -->
             <div class="gallery-image-container">
               <img src="../assets/images/dim_model.png" class="gallery-image">
               <span class="image-caption">Dimensionaly Model implemented in Snowflake.</span>
@@ -126,11 +76,7 @@
 
     <!-- FOOTER -->
     <div id="footer">
-      <!-- 
-        TODO - Change the email after "mailto" to your contact email 
-      
-        This should be the same across all pages.
-      -->
+
       <a class="icon-link" href="mailto:ochristopher380@gmail.com">
         <image src="../assets/icons/mail.svg" class="footer-icon"/>
       </a>
