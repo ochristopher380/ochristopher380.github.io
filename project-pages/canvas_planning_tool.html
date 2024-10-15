@@ -1,0 +1,74 @@
+
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+    
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-WNDTCQRJG3"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-WNDTCQRJG3');
+    </script>
+
+		<meta charset="utf-8">
+
+     <link rel="icon" href="../assets/images/1311.png" />
+     <title>Chris Olson's Portfolio</title>
+    <meta name="description" content="A portfolio template for the Unemployables community.">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+		<link rel="stylesheet" href="../css/layout.css">
+    <link rel="stylesheet" href="../css/typography.css">
+    <link rel="stylesheet" href="../css/utilities.css">
+
+		<script defer src="../js/script.js"></script>
+	</head>
+	<body>
+    <!-- NAVBAR -->
+    <div class="navbar">
+      <a class="nav-title-link" href="../index.html">
+
+        <span class="nav-title">My Portfolio</span>
+
+        <a class="button" href="mailto:ochristopher380@gmail.com">
+          <span class="button-text">Contact Me</span>
+        </a>
+      </a>
+    </div>
+
+    <!-- MAIN PAGE CONTENT -->
+    <div id="main-content">
+
+      <!-- PROJECT HEADER -->
+      <div id="project-header">
+
+        <div class="main-title">Canvas Planning Tool</div>
+        <div class="body-text">An interactive map with filters and a tooltip to help candidates with limited resources focus their canvassing efforts to where the votes are.</div>
+      </div>
+      <iframe height="700" width="100%" frameborder="no" src="https://ochristopher380.shinyapps.io/2024grpscanvastool/"> </iframe>
+
+      <!-- PROJECT DETAILS -->
+
+      <div id="project-details">
+        <div class="subheader-text">Project Details</div>
+        <div class="project-details-content">
+          <div class="body-text">Candidates running for office have limited resources and volunteers, this is especially true for local races such as school board. In order for candidates to focus their efforts, they need to know who might vote in the next election. Precincts offer the most granular level of understanding where voters reside. I pulled election resuls from the county clerk's website and precinct shapefiles to create an initial map in Folium. The final dashboard was created with Shiny for Python with ipyleaflet used to create the map. I refactored the initial map from Folium to ipyleaflet in order to utilize the the efficient updates of jupyter widgets in the Shiny framework allowing more efficient updates to be made to the map by the user.</div>
+          
+
+    <!-- FOOTER -->
+    <div id="footer">
+
+      <a class="icon-link" href="mailto:ochristopher380@gmail.com">
+        <image src="../assets/icons/mail.svg" class="footer-icon"/>
+      </a>
+
+      <a class="icon-link" href="https://www.linkedin.com/in/christopher-olson-ba788716a/">
+        <image src="../assets/icons/icons8-linkedin.svg" class="footer-icon"/>
+      </a>
+    </div>
+
+	</body>
+</html>
