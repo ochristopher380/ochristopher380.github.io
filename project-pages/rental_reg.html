@@ -1,0 +1,80 @@
+
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-WNDTCQRJG3"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-WNDTCQRJG3');
+    </script>
+    
+    <meta charset="utf-8">
+
+     <link rel="icon" href="../assets/images/1311.png" />
+     <title>Chris Olson's Portfolio</title>
+    <meta name="description" content="A portfolio template for the Unemployables community.">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+		<link rel="stylesheet" href="../css/layout.css">
+    <link rel="stylesheet" href="../css/typography.css">
+    <link rel="stylesheet" href="../css/utilities.css">
+
+		<script defer src="../js/script.js"></script>
+	</head>
+	<body>
+    <!-- NAVBAR -->
+    <div class="navbar">
+      <a class="nav-title-link" href="../index.html">
+
+        <span class="nav-title">My Portfolio</span>
+
+        <a class="button" href="mailto:ochristopher380@gmail.com">
+          <span class="button-text">Contact Me</span>
+        </a>
+      </a>
+    </div>
+
+    <!-- MAIN PAGE CONTENT -->
+    <div id="main-content">
+
+      <!-- PROJECT HEADER -->
+      <div id="project-header">
+
+        <div class="main-title">Seattle Rental Registration Archive</div>
+        <div class="body-text">Using publicly available data to understand changes in Seattle's rental market</div>
+        
+
+      <!-- PROJECT DETAILS -->
+
+      <div id="project-details">
+        <div class="subheader-text">Project Details</div>
+        <div class="project-details-content">
+          <div class="body-text">The City of Seattle requires all rental properties in the city to register with them as rental properties and this registration data is available through the City’s open data portal. What you will find however is that this data set does not include any historical data, it is only a present-moment snapshot and the city does not store this historical data.</div>
+
+          <div class="body-text">Why throw this valuable data away?! During my master's program, I lead a class group project to archive this data and I have rewritten the code for that project to run the project in the cloud!</div>
+             
+          <div class="body-text">Each day the City’s data set is checked to see what new registrations have been added and which are no longer registered. I store this data in a database and you can access the historic dataset through an API I have written with Flask. By making a get request to <a href="http://cnolson.pythonanywhere.com/SeattleRentalRegistrations">http://cnolson.pythonanywhere.com/SeattleRentalRegistrations</a>, you will get the data from the current registration data set as well as data historical data captured since October, additional latitude and longitude data from geocoding I have added, additional historical data I scraped from the registration urls using scrapy-playwright and code complaints and violations for the property from the City’s code complaints dataset.</div>
+            
+          <div class="body-text">This project is still ongoing. I hope to add additional API endpoints, add more data, improve data quality, and create an interactive dashboard with the data in the future.</div>
+        </div>
+      </div>
+
+    <!-- FOOTER -->
+    <div id="footer">
+
+      <a class="icon-link" href="mailto:ochristopher380@gmail.com">
+        <image src="../assets/icons/mail.svg" class="footer-icon"/>
+      </a>
+
+      <a class="icon-link" href="https://www.linkedin.com/in/christopher-olson-ba788716a/">
+        <image src="../assets/icons/icons8-linkedin.svg" class="footer-icon"/>
+      </a>
+    </div>
+
+	</body>
+</html>
